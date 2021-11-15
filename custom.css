@@ -1,0 +1,27 @@
+.json-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .left-container {
+    text-align: center;
+    width: 35%;
+    height: 95vh;
+  }
+  .right-container {
+    width: 55%;
+    border: 1px solid;
+    height: 95vh;
+    overflow: auto;
+  }
+  .middle-container {
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #tree-view-container {
+    white-space: pre;
+    font-family: monospace;
+  }

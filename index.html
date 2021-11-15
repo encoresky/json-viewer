@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON Beautifier</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="jsonview.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="json-block">
+        <div class="left-container">
+          <textarea
+            placeholder="Paste JSON"
+            style="height: 95vh; width: 98%"
+            id="input-component"
+          ></textarea>
+        </div>
+        <div class="middle-container">
+          <button onClick="printJsonTree()" style="margin-bottom: 50px">
+            Json tree
+          </button>
+          <button onClick="printBeautifulJson()">Json Beautify</button>
+        </div>
+        <div class="right-container root" id="tree-view-container"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="jsonview.bundle.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+  </body>
+</html>
